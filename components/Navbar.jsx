@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const BhairavTimes = () => {
   return (
@@ -11,15 +12,24 @@ const BhairavTimes = () => {
             <h1 className="text-2xl font-bold text-white">भैरव टाइम्स</h1>
           </div>
           <div className="flex justify-center items-center space-x-8 pb-3">
-            <a href="/" className="text-white hover:text-gray-200 font-medium">
+            <Link
+              href="/"
+              className="text-white hover:text-gray-200 font-medium"
+            >
               होम
-            </a>
-            <a
+            </Link>
+            <Link
               href="/action"
               className="text-white hover:text-gray-200 font-medium"
             >
               एक्शन
-            </a>
+            </Link>
+            <Link
+              href="/contact"
+              className="text-white hover:text-gray-200 font-medium"
+            >
+              कांटैक्ट
+            </Link>
           </div>
         </div>
       </nav>
